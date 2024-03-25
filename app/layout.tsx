@@ -6,19 +6,19 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "8tcapital.com",
-    template: "%s | 8tcapital.com",
+    default: "8tcapital.xyz",
+    template: "%s | 8tcapital.xyz",
   },
   description: "Co-founder of unkey.dev and founder of planetfall.io",
   openGraph: {
-    title: "8tcapital.com",
+    title: "8tcapital.xyz",
     description:
       "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://8tcapital.com",
-    siteName: "8tcapital.com",
+    url: "https://8tcapital.xyz",
+    siteName: "8tcapital.xyz",
     images: [
       {
-        url: "https://8tcapital.com/og.png",
+        url: "https://8tcapital.xyz/og.png",
         width: 1920,
         height: 1080,
       },
