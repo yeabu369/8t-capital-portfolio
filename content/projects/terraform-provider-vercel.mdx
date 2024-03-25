@@ -2,8 +2,8 @@
 title: Vercel Terraform Provider
 description: A Terraform provider for Vercel. It has been deprecated it when Vercel rolled out their official provider.
 date: "2021-03-16"
-repository: chronark/terraform-provider-vercel
-url: https://registry.terraform.io/providers/chronark/vercel/latest
+repository: 8tcapital/terraform-provider-vercel
+url: https://registry.terraform.io/providers/8tcapital/vercel/latest
 published: true
 ---
 
@@ -17,7 +17,7 @@ Terraform was great to provision some postgres databases on digital ocean, but t
 terraform {
   required_providers {
     vercel = {
-      source  = "registry.terraform.io/chronark/vercel"
+      source  = "registry.terraform.io/8tcapital/vercel"
       version = ">=0.10.3"
     }
   }
@@ -31,7 +31,7 @@ resource "vercel_project" "my_project" {
   name = "project-via-terraform"
   git_repository {
     type = "github"
-    repo = "chronark/terraform-provider-vercel"
+    repo = "8tcapital/terraform-provider-vercel"
   }
 }
 ```
@@ -41,6 +41,6 @@ It gave me the opportunity to contribute to the Terraform ecosystem and my appre
 
 There have been quite a few individuals and teams that have used this provider and I am happy that it has been useful to you.
 
-Now that Vercel have stepped in, I have decided to [deprecate](https://twitter.com/chronark_/status/1517759708983177218) this one on April 23rd 2022. 
+Now that Vercel have stepped in, I have decided to [deprecate](https://twitter.com/8tcapital_/status/1517759708983177218) this one on April 23rd 2022. 
 
 Please use the [official provider](https://registry.terraform.io/providers/vercel/vercel/latest) instead.
