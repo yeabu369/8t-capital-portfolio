@@ -38,10 +38,10 @@ export default function Home() {
         Accelerating Physics based AGI {" "}
           <Link
             target="_blank"
-            href="https://8tcapital.xyz"
+            href="https://8tcap.com"
             className="underline duration-500 hover:text-zinc-300"
           >
-            8tcapital.xyz
+            8tcap.com
           </Link> 
         </h2>
       </div>

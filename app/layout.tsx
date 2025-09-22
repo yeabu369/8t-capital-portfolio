@@ -6,19 +6,19 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "8tcapital.xyz",
-    template: "%s | 8tcapital.xyz",
+    default: "8tcap.com",
+    template: "%s | 8tcap.com",
   },
   description: "Accelerating Physics based AGI @ 8T Capital",
   openGraph: {
-    title: "8tcapital.xyz",
+    title: "8tcap.com",
     description:
       "Accelerating Physics based AGI @ 8T Capital",
-    url: "https://8tcapital.xyz",
-    siteName: "8tcapital.xyz",
+    url: "https://8tcap.com",
+    siteName: "8tcap.com",
     images: [
       {
-        url: "https://8tcapital.xyz/og.png",
+        url: "https://8tcap.com/og.png",
         width: 1920,
         height: 1080,
       },
