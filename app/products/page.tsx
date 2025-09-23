@@ -48,6 +48,7 @@ export default async function ProjectsPage() {
               .map((product) => (
                 <Card key={product.slug}>
                   <Article product={product} views={views[product.slug] ?? 0} />
+                  <a href="https://buy.stripe.com/fZu4gsbMT8064wz0x6c3m02" className="px-4 py-2 text-sm font-semibold text-white bg-green-600 rounded hover:bg-green-700 cursor-pointer">Buy Now</a>
                 </Card>
               ))}
           </div>
@@ -57,6 +58,7 @@ export default async function ProjectsPage() {
               .map((product) => (
                 <Card key={product.slug}>
                   <Article product={product} views={views[product.slug] ?? 0} />
+                  <a href="https://buy.stripe.com/bJe5kw6sz4NUd35cfOc3m03" className="px-4 py-2 text-sm font-semibold text-white bg-green-600 rounded hover:bg-green-700 cursor-pointer">Buy Now</a>
                 </Card>
               ))}
           </div>
@@ -66,6 +68,7 @@ export default async function ProjectsPage() {
               .map((product) => (
                 <Card key={product.slug}>
                   <Article product={product} views={views[product.slug] ?? 0} />
+                  <a href="https://buy.stripe.com/dRm9AM7wD94ae79bbKc3m04" className="px-4 py-2 text-sm font-semibold text-white bg-green-600 rounded hover:bg-green-700 cursor-pointer">Buy Now</a>
                 </Card>
               ))}
           </div>
@@ -75,6 +78,7 @@ export default async function ProjectsPage() {
               .map((product) => (
                 <Card key={product.slug}>
                   <Article product={product} views={views[product.slug] ?? 0} />
+                  <a href="https://buy.stripe.com/6oU14gdV13JQaUX1Bac3m05" className="px-4 py-2 mt-2 text-sm font-semibold text-white bg-green-600 rounded hover:bg-green-700 cursor-pointer">Buy Now</a>
                 </Card>
               ))}
           </div>
