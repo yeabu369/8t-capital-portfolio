@@ -41,10 +41,10 @@ export default async function ProjectsPage() {
 
         <div className="hidden w-full h-px md:block bg-zinc-800" />
 
-        <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-4">
           <div className="grid grid-cols-1 gap-4">
             {sorted
-              .filter((_, i) => i % 3 === 0)
+              .filter((_, i) => i % 4 === 0)
               .map((product) => (
                 <Card key={product.slug}>
                   <Article product={product} views={views[product.slug] ?? 0} />
@@ -53,7 +53,7 @@ export default async function ProjectsPage() {
           </div>
           <div className="grid grid-cols-1 gap-4">
             {sorted
-              .filter((_, i) => i % 3 === 1)
+              .filter((_, i) => i % 4 === 1)
               .map((product) => (
                 <Card key={product.slug}>
                   <Article product={product} views={views[product.slug] ?? 0} />
@@ -62,7 +62,16 @@ export default async function ProjectsPage() {
           </div>
           <div className="grid grid-cols-1 gap-4">
             {sorted
-              .filter((_, i) => i % 3 === 2)
+              .filter((_, i) => i % 4 === 2)
+              .map((product) => (
+                <Card key={product.slug}>
+                  <Article product={product} views={views[product.slug] ?? 0} />
+                </Card>
+              ))}
+          </div>
+          <div className="grid grid-cols-1 gap-4">
+            {sorted
+              .filter((_, i) => i % 4 === 3)
               .map((product) => (
                 <Card key={product.slug}>
                   <Article product={product} views={views[product.slug] ?? 0} />
