@@ -9,11 +9,11 @@ export const metadata: Metadata = {
     default: "8tcap.com",
     template: "%s | 8tcap.com",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "Building physics based agents for internet capital markets",
   openGraph: {
     title: "8tcap.com",
     description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
+      "Building physics based agents for internet capital markets",
     url: "https://8tcap.com",
     siteName: "8tcap.com",
     images: [
