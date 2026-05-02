@@ -1,5 +1,5 @@
 import "../global.css";
-import { Inter } from "@next/font/google";
+import { Inter, Playfair_Display, JetBrains_Mono } from "@next/font/google";
 import LocalFont from "@next/font/local";
 import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
@@ -9,11 +9,11 @@ export const metadata: Metadata = {
     default: "8tcap.com",
     template: "%s | 8tcap.com",
   },
-  description: "Building physics based agents for internet capital markets",
+  description: "Capital Superintelligence Tools at the Intersection of Capital Markets",
   openGraph: {
     title: "8tcap.com",
     description:
-      "Building physics based agents for internet capital markets",
+      "Capital Superintelligence Tools at the Intersection of Capital Markets",
     url: "https://8tcap.com",
     siteName: "8tcap.com",
     images: [
@@ -50,6 +50,16 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+});
+
+const jetbrains = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains",
+});
+
 const calSans = LocalFont({
   src: "../public/fonts/CalSans-SemiBold.ttf",
   variable: "--font-calsans",
@@ -61,7 +71,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
+    <html lang="en" className={[inter.variable, calSans.variable, playfair.variable, jetbrains.variable].join(" ")}>
       <head>
         <Analytics />
       </head>

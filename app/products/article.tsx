@@ -9,10 +9,10 @@ type Props = {
 
 export const Article: React.FC<Props> = ({ product, views }) => {
 	return (
-		<Link href={`/products/${product.slug}`}>
-			<article className="p-4 md:p-8">
-				<div className="flex justify-between gap-2 items-center">
-					<span className="text-xs duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
+		<Link href={`/products/${product.slug}`} className="flex-1 flex flex-col">
+			<article className="p-4 md:p-8 font-mono flex-1 flex flex-col">
+				<div className="flex justify-between gap-2 items-center mb-4 opacity-50 text-[10px] uppercase tracking-widest">
+					<span>
 						{product.date ? (
 							<time dateTime={new Date(product.date).toISOString()}>
 								{Intl.DateTimeFormat(undefined, { dateStyle: "medium" }).format(
@@ -23,15 +23,15 @@ export const Article: React.FC<Props> = ({ product, views }) => {
 							<span>SOON</span>
 						)}
 					</span>
-					<span className="text-zinc-500 text-xs  flex items-center gap-1">
-						<Eye className="w-4 h-4" />{" "}
+					<span className="flex items-center gap-1">
+						<Eye size={12} />{" "}
 						{Intl.NumberFormat("en-US", { notation: "compact" }).format(views)}
 					</span>
 				</div>
-				<h2 className="z-20 text-xl font-medium duration-1000 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
+				<h2 className="text-2xl font-serif text-white mb-4">
 					{product.title}
 				</h2>
-				<p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
+				<p className="text-xs text-zinc-400 leading-relaxed flex-1">
 					{product.description}
 				</p>
 			</article>

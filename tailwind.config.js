@@ -31,6 +31,8 @@ module.exports = {
 			fontFamily: {
 				sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
 				display: ["var(--font-calsans)"],
+				serif: ["var(--font-playfair)", ...defaultTheme.fontFamily.serif],
+				mono: ["var(--font-jetbrains)", ...defaultTheme.fontFamily.mono],
 			},
 			backgroundImage: {
 				"gradient-radial":
@@ -84,20 +86,11 @@ module.exports = {
 				},
 				title: {
 					"0%": {
-						"line-height": "0%",
-						"letter-spacing": "0.25em",
+						"letter-spacing": "0.5em",
 						opacity: "0",
 					},
-					"25%": {
-						"line-height": "0%",
-						opacity: "0%",
-					},
-					"80%": {
-						opacity: "100%",
-					},
-
 					"100%": {
-						"line-height": "100%",
+						"letter-spacing": "tight",
 						opacity: "100%",
 					},
 				},
